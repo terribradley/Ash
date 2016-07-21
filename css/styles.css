@@ -379,7 +379,8 @@ textarea {
   text-align: center;
   background-color: #D38A7A;
   background-attachment: fixed;
-  height: 70vh; }
+  height: 70vh;
+  background-attachment: fixed; }
 
 #skills-section, #work-section, #resume-section {
   display: flex;
@@ -412,6 +413,13 @@ textarea {
     .skill, .work .about .info {
       width: 30%;
       padding: 5% 1%; } }
+
+.mast {
+  text-align: center;
+  background-color: #D38A7A;
+  background-attachment: fixed;
+  height: 80vh;
+  background-attachment: fixed; }
 
 .mast h1 {
   position: relative;
