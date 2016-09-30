@@ -1,6 +1,8 @@
 .mast {
   text-align: center;
-  background-color: #D38A7A;
+  // background-color: #D38A7A;
+  background-color: #faf6f0;
+  //  background: #F26451;
   background-attachment: fixed;
   height: 80vh;
   background-attachment: fixed;
@@ -11,39 +13,39 @@
     margin: 0;
     letter-spacing: 1px;
     font-size: 4em;
-    color: white;
+    color: black;
 }
 
-.mast h1:before,
-.mast h1:after {
-    display: inline-block;
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-    transition: transform 0.3s, opacity 0.2s;
-}
-
-.mast h1:after {
-    margin-left: 0;
-    content: 'ERRI LYNN Bradley';
-    -webkit-transform: translate(-20px);
-    -moz-transform: translate(-20px);
-    transform: translate(-20px);
-}
-.mast h1:after {
-    margin-left: 0;
-    content: 'Frontend Development';
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    transform: translatX(-20px);
-}
-
-.mast h1:hover:before,
-.mast h1:hover:after,
-.mast h1:focus:before,
-.mast h1:focus:after {
-    opacity: 1;
-    -webkit-transform: translate(0px);
-    -moz-transform: translate(0px);
-    transform: translate(0px);
-}
+// .mast h1:before,
+// .mast h1:after {
+//     display: inline-block;
+//     opacity: 0;
+//     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+//     -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+//     transition: transform 0.3s, opacity 0.2s;
+// }
+//
+// .mast h1:after {
+//     margin-left: 0;
+//     content: 'ERRI LYNN Bradley';
+//     -webkit-transform: translate(-20px);
+//     -moz-transform: translate(-20px);
+//     transform: translate(-20px);
+// }
+// .mast h1:after {
+//     margin-left: 0;
+//     content: 'ERRI LYNN BRADLEY';
+//     -webkit-transform: translateX(-20px);
+//     -moz-transform: translateX(-20px);
+//     transform: translatX(-20px);
+// }
+//
+// .mast h1:hover:before,
+// .mast h1:hover:after,
+// .mast h1:focus:before,
+// .mast h1:focus:after {
+//     opacity: 1;
+//     -webkit-transform: translate(0px);
+//     -moz-transform: translate(0px);
+//     transform: translate(0px);
+// }
