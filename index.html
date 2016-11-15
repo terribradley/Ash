@@ -6,65 +6,53 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li class="fa-home">home</li>
-        <li class="fa-suitcase">about</li>
-        <li class="fa-flask">work</li>
-        <li class="fa-user">contact</li>
-      </ul>
-    </nav>
-      <div class="page-content">
-        <header class="mast">
-          <h1>Wed Development</h1>
-          <!-- <h2>Frontend Development  //  Design</h2> -->
-        </header>
-        <div class="container">
-          <section>
-            <article id=skills-section>
-              <header class="intro">
-                <h2>Skills and Expertise</h2>
-                <p>I've been working on developing skills to quickly code user friendly, intelligent, elegantly designed websites</p>
-              </header>
-              <div class="skill one">
-                <h2>Frontend Development</h2>
-                <p>I write code that conforms to the W3C's web standards and semantic best practices. I use technologies like HTML5 / Jade, CSS3 (SASS), Javascript and jQuery, to transform static artwork into mobile first, pixel prefect, interactive and fully functional interfaces; exactly the way your designers intend them to be.</p>
-              </div>
-              <div class="skill two">
-                <h2>Responsive Web Development</h2>
-                <p>How will we ensure your website looks great on multiple devices; including those that haven't even been invented yet? I build using a responsive grid system mobile first. I have experience with frontend frameworks such as Foundation, Bootstrap and Bourbon Neat ensure that layouts are now quicker, smarter, standardised and more future-proof.</p>
-              </div>
-              <div class="skill three">
-                <h2>Design and Fine Arts Integrated with User Experience</h2>
-                <p>My education in fine arts and design help me compose beautiful creative sights that direct and aide the user's experience.</p>
-              </div>
-            </article>
+    <input type="checkbox" id="sidebar-toggler">
+   <div class="wrapper">
+    <label for="sidebar-toggler" class="toggle"><img src="img/corner.png" alt="corner" /></label>
+      <header>
+        <h1>Terri</h1>
+        <h1>Web</h1>
+        <h1>Development</h1>
+        <h1>Bradley</h1>
+      </header>
+        <div class="paper edge-top"></div>
+        <div class="paper edge-right"></div>
+        <div class="paper edge-bottom"></div>
+        <div class="paper edge-left"></div>
+        <div class="page-content">
+      <div class="container">
+        <article id=skills>
+          <section class="intro">
+            <h2>Skills and Expertise</h2>
+            <p>I've been working on developing skills to quickly code user friendly, intelligent, elegantly designed websites</p>
           </section>
-          <section>
-            <article id="work-section">
-              <header class="intro">
-                <h2>Selected Work</h2>
-              </header>
-              <div class="work one">
-                <img src="img/mac_example.png" alt="work example on mac" />
-              </div>
-              <div class="work two">
-                img
-              </div>
-              <div class="work three">
-                img
-              </div>
-            </article>
+          <section class="skill one">
+            <h2>Frontend Development</h2>
+            <p>I write code that conforms to the W3C's web standards and semantic best practices. I use technologies like HTML5 / Jade, CSS3 (SASS), Javascript and jQuery, to transform static artwork into mobile first, pixel prefect, interactive and fully functional interfaces; exactly the way your designers intend them to be.</p>
           </section>
-          <section>
-            <article id="resume-section">
-              <header>
-                <h2>Resume DownLoad</h2>
-                <p>For agencies interested in a copy of my resume as a PDF</p>
-                <p><a href="#">Download</a></p>
-              </header>
-            </article>
+          <section class="skill two">
+            <h2>Responsive Web Development</h2>
+            <p>How will we ensure your website looks great on multiple devices; including those that haven't even been invented yet? I build using a responsive grid system mobile first. I have experience with frontend frameworks such as Foundation, Bootstrap and Bourbon Neat ensure that layouts are now quicker, smarter, standardised and more future-proof.</p>
           </section>
+          <section class="skill three">
+            <h2>Design and Fine Arts Integrated with User Experience</h2>
+            <p>My education in fine arts and design help me compose beautiful creative sights that direct and aide the user's experience.</p>
+          </section>
+        </article>
+        <article id="work-section">
+          <section class="intro">
+            <h2>Selected Work</h2>
+          </section>
+          <section class="work one">
+            <img src="img/mac_example.png" alt="work example on mac" />
+          </section>
+          <section class="work two">
+            img
+          </section>
+          <section class="work three">
+            img
+          </section>
+        </article>
         </div>
         <footer id=contact>
           <div class="about">
@@ -77,6 +65,15 @@
             social
           </div>
         </footer>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li class="intro-link">About</li>
+          <li class="context-link">Work</li>
+          <li class="process-link">Contact</li>
+          <li class="solution-link">Home</li>
+
+        </ul>
       </div>
     </div>
   </body>

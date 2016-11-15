@@ -1,7 +1,8 @@
-@import "libraries/normalize";
+@import "normalize";
 @import "libraries/bourbon/bourbon";
-@import "libraries/layout";
-@import "libraries/variables";
-@import "libraries/mixins";
-@import "libraries/mast";
-@import "libraries/nav";
+@import "variables";
+@import "nav";
+@import "layout";
+@import "mixins";
+@import "header";
+@import "paper";
