@@ -432,36 +432,45 @@ body {
 .container {
   display: flex;
   flex-direction: column; }
-  .container #skills {
-    background-color: #F26451; }
   .container #skills, .container #work-section, .container #resume-section, .container #contact {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 150vh; }
+    height: 100vh; }
     .container #skills h2, .container #work-section h2, .container #resume-section h2, .container #contact h2 {
       text-align: center;
-      margin-top: 5%; }
+      margin-top: 10%; }
+      @media screen and (min-width: 880px) {
+        .container #skills h2, .container #work-section h2, .container #resume-section h2, .container #contact h2 {
+          margin-top: 8%; } }
     @media screen and (min-width: 880px) {
       .container #skills, .container #work-section, .container #resume-section, .container #contact {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 90%;
-        padding: 0 5%;
+        width: 85%;
+        padding: 0 7.5%; } }
+  .container #skills {
+    background-color: #F26451;
+    height: 150vh; }
+    @media screen and (min-width: 880px) {
+      .container #skills {
         height: 100vh; } }
   .container .intro {
-    width: 100%; }
+    width: 100%;
+    margin-top: 10%; }
     .container .intro p {
       text-align: center; }
-  .container .skill, .container .work .about .info {
-    height: 35vh;
-    width: 100%;
-    padding: 5% 1%; }
     @media screen and (min-width: 880px) {
-      .container .skill, .container .work .about .info {
-        width: 30%; } }
+      .container .intro {
+        height: 5vh;
+        margin-top: 0; } }
+  .container .skill img, .container .work img {
+    width: 100%; }
+  @media screen and (min-width: 880px) {
+    .container .skill, .container .work {
+      width: 30%; } }
 
 header {
   text-align: center;

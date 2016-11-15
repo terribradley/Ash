@@ -5,41 +5,51 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  #skills{
-    background-color: $color-two;
-  }
   #skills, #work-section, #resume-section, #contact {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 150vh;
+    height: 100vh;
     h2 {
       text-align: center;
-      margin-top: 5%;
+      margin-top: 10%;
+      @media screen and (min-width: 880px) {
+        margin-top: 8%;
+      }
     }
-  @media screen and (min-width: 880px) {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-    padding: 0 5%;
-    height: 100vh;
+    @media screen and (min-width: 880px) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 85%;
+      padding: 0 7.5%;
+    }
   }
-}
-.intro {
-  width: 100%;
-  p {
-    text-align: center;
+  #skills {
+    background-color: $color-two;
+      height: 150vh;
+      @media screen and (min-width: 880px) {
+      height: 100vh;
+    }
   }
-}
-.skill, .work .about .info {
-  height: 35vh;
-  width: 100%;
-  padding: 5% 1%;
-
+  .intro {
+    width: 100%;
+    margin-top: 10%;
+    p {
+      text-align: center;
+    }
+    @media screen and (min-width: 880px) {
+      height: 5vh;
+      margin-top: 0;
+    }
+  }
+  .skill, .work {
+    img {
+      width: 100%;
+    }
     @media screen and (min-width: 880px) {
       width: 30%;
     }
-}
+  }
 }

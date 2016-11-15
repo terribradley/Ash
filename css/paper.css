@@ -2,7 +2,7 @@
 Error: Undefined variable: "$color-one".
         on line 4 of scss/paper.scss
 
-1: // ************page**************
+1: 
 2: .paper {
 3:   position: fixed;
 4:   border: solid $color-one;
@@ -69,4 +69,4 @@ scss/paper.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-one\".\A         on line 4 of scss/paper.scss\A \A 1: // ************page**************\A 2: .paper {\A 3:   position: fixed;\A 4:   border: solid $color-one;\A 5: }\A 6: .paper.edge-top {\A 7:     top: 0;\A 8:     right: 90px;\A 9:     left: 27px;"; }
+  content: "Error: Undefined variable: \"$color-one\".\A         on line 4 of scss/paper.scss\A \A 1: \A 2: .paper {\A 3:   position: fixed;\A 4:   border: solid $color-one;\A 5: }\A 6: .paper.edge-top {\A 7:     top: 0;\A 8:     right: 90px;\A 9:     left: 27px;"; }
