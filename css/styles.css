@@ -389,12 +389,12 @@ textarea {
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
-  width: 150px;
+  width: 130px;
   height: 100vh;
   padding: 1%;
-  color: black; }
+  color: #434242; }
   .sidebar ul {
-    margin-top: 30px;
+    margin-top: 10%;
     display: flex;
     flex-direction: column; }
     .sidebar ul li {
@@ -412,13 +412,11 @@ textarea {
 #sidebar-toggler {
   display: none; }
   #sidebar-toggler:checked + .wrapper .sidebar {
-    left: 88%; }
+    left: 85%; }
   #sidebar-toggler:checked + .wrapper .toggle {
     right: 200px; }
   #sidebar-toggler:checked + .wrapper .page-content {
-    padding-right: 10%; }
-  #sidebar-toggler:checked + .wrapper section {
-    width: 97%; }
+    padding-right: 14%; }
   #sidebar-toggler:checked + .wrapper .paper.edge-top {
     right: 243px; }
   #sidebar-toggler:checked + .wrapper .paper.edge-bottom {
@@ -432,20 +430,20 @@ body {
 .container {
   display: flex;
   flex-direction: column; }
-  .container #skills, .container #work-section, .container #resume-section, .container #contact {
+  .container #skills, .container #work-section, .container #resume-section {
     padding: 0 10%;
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 100vh; }
-    .container #skills h2, .container #work-section h2, .container #resume-section h2, .container #contact h2 {
+    .container #skills h2, .container #work-section h2, .container #resume-section h2 {
       text-align: center;
       margin-top: 10%; }
-      @media screen and (min-width: 880px) {
-        .container #skills h2, .container #work-section h2, .container #resume-section h2, .container #contact h2 {
+      @media screen and (min-width: 780px) {
+        .container #skills h2, .container #work-section h2, .container #resume-section h2 {
           margin-top: 8%; } }
-    @media screen and (min-width: 880px) {
-      .container #skills, .container #work-section, .container #resume-section, .container #contact {
+    @media screen and (min-width: 780px) {
+      .container #skills, .container #work-section, .container #resume-section {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -454,32 +452,64 @@ body {
   .container #skills {
     background-color: #F26451;
     height: 150vh; }
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 780px) {
       .container #skills {
         height: 100vh; } }
+  .container #contact {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh; }
+    .container #contact p {
+      text-align: center; }
+    .container #contact h2 {
+      text-align: center;
+      margin-top: 10%; }
+      @media screen and (min-width: 780px) {
+        .container #contact h2 {
+          margin-top: 8%; } }
+    .container #contact .info {
+      width: 50%;
+      margin: 0 25%; }
   .container .intro {
     width: 100%;
     margin-top: 10%; }
     .container .intro p {
       text-align: center; }
-    @media screen and (min-width: 880px) {
+    @media screen and (min-width: 780px) {
       .container .intro {
         height: 5vh;
         margin-top: 0; } }
   .container .skill img, .container .work img {
     width: 100%; }
-  @media screen and (min-width: 880px) {
+  @media screen and (min-width: 780px) {
     .container .skill, .container .work {
       width: 30%; } }
 
 header {
-  text-align: center;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  position: relative; }
   header h1 {
     color: #434242; }
+  header .logo {
+    width: 100%;
+    position: absolute; }
+  header .center {
+    width: 28%;
+    position: absolute; }
+  header .one {
+    top: 17%;
+    left: 51%; }
+  header .two {
+    top: 45%;
+    left: 39%; }
+  header .three {
+    top: 23%;
+    left: 64%; }
+  header .four {
+    top: 69%;
+    left: 43%; }
 
 .paper {
   position: fixed;
