@@ -41,6 +41,7 @@
 }
 #sidebar-toggler {
   display: none;
+  @media screen and (min-width: 768px) {
   &:checked + .wrapper {
     .sidebar {
       left: 85%;
@@ -61,4 +62,5 @@
       right: 152px;
     }
   }
+    }
 }

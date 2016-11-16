@@ -5,27 +5,45 @@ header {
     color: $color-one;
   }
   .logo {
-    width: 100%;
     position: absolute;
   }
   .center {
     width: 28%;
     position: absolute;
   }
+
   .one {
-    top: 17%;
-    left: 51%;
+    top: 29%;
+    left: 58%;
   }
   .two {
-    top: 45%;
-    left: 39%;
+    top: 40%;
+    left: 30%;
   }
   .three {
-    top: 23%;
-    left: 64%;
+    top: 42%;
+    left: 71%;
   }
   .four {
-    top: 69%;
-    left: 43%;
+    top: 61%;
+    left: 38%;
   }
 }
+@media screen and (min-width: 780px)  {
+    .one {
+      top: 17%;
+      left: 51%;
+    }
+    .two {
+      top: 45%;
+      left: 39%;
+    }
+    .three {
+      top: 23%;
+      left: 64%;
+    }
+    .four {
+      top: 69%;
+      left: 43%;
+    }
+  }
