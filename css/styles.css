@@ -428,65 +428,45 @@ textarea {
 body {
   background-color: #faf6f0; }
 
-.container {
+.wrapper {
   display: flex;
   flex-direction: column; }
-  .container #skills, .container #work-section, .container #resume-section {
-    padding: 0 10%;
+  .wrapper #skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    padding: 10%;
+    text-align: center;
+    background-color: #F26451; }
+    .wrapper #skills-section h2 {
+      font-size: 2em; }
+    .wrapper #skills-section p {
+      font-size: 1.5em; }
+  .wrapper #work-section {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 100vh; }
-    .container #skills h2, .container #work-section h2, .container #resume-section h2 {
-      text-align: center;
-      margin-top: 10%; }
-      @media screen and (min-width: 780px) {
-        .container #skills h2, .container #work-section h2, .container #resume-section h2 {
-          margin-top: 8%; } }
-    @media screen and (min-width: 780px) {
-      .container #skills, .container #work-section, .container #resume-section {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 85%;
-        padding: 0 7.5%; } }
-  .container #skills {
-    background-color: #F26451;
-    height: 150vh; }
-    @media screen and (min-width: 780px) {
-      .container #skills {
-        height: 100vh; } }
-  .container #contact {
-    padding: 0 10%;
+    height: 90vh;
+    padding: 10%;
+    text-align: center; }
+    .wrapper #work-section .intro {
+      margin-bottom: 5%; }
+    .wrapper #work-section .work {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .wrapper #work-section .work button {
+        border: 2px solid #434242;
+        border-radius: 3px;
+        width: 100px;
+        padding: 10px;
+        background-color: #faf6f0;
+        margin: 2%; }
+  .wrapper #contact {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 100vh; }
-    .container #contact p {
-      text-align: center; }
-    .container #contact h2 {
-      text-align: center;
-      margin-top: 10%; }
-      @media screen and (min-width: 780px) {
-        .container #contact h2 {
-          margin-top: 8%; } }
-    .container #contact .info {
-      width: 50%;
-      margin: 0 25%; }
-  .container .intro {
-    width: 100%;
-    margin-top: 10%; }
-    .container .intro p {
-      text-align: center; }
-    @media screen and (min-width: 780px) {
-      .container .intro {
-        height: 5vh;
-        margin-top: 0; } }
-  .container .skill img, .container .work img {
-    width: 100%; }
-  @media screen and (min-width: 780px) {
-    .container .skill, .container .work {
-      width: 30%; } }
+    height: 30vh;
+    padding: 10%;
+    text-align: center; }
 
 header {
   height: 100vh;
