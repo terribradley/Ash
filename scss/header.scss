@@ -11,7 +11,6 @@ header {
     width: 28%;
     position: absolute;
   }
-
   .one {
     top: 29%;
     left: 58%;
@@ -28,8 +27,7 @@ header {
     top: 61%;
     left: 38%;
   }
-}
-@media screen and (min-width: 780px)  {
+  @media only screen and (min-width: 780px) {
     .one {
       top: 17%;
       left: 51%;
@@ -47,3 +45,4 @@ header {
       left: 43%;
     }
   }
+}

@@ -431,42 +431,69 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column; }
-  .wrapper #skills-section {
+  .wrapper #skills-section, .wrapper #work-section {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     height: 90vh;
     padding: 10%;
-    text-align: center;
-    background-color: #F26451; }
-    .wrapper #skills-section h2 {
-      font-size: 2em; }
-    .wrapper #skills-section p {
+    text-align: center; }
+    .wrapper #skills-section h2, .wrapper #work-section h2 {
+      font-size: 2em;
+      text-align: center; }
+    .wrapper #skills-section p, .wrapper #work-section p {
       font-size: 1.5em; }
-  .wrapper #work-section {
+    @media only screen and (min-width: 780px) {
+      .wrapper #skills-section, .wrapper #work-section {
+        flex-direction: row;
+        text-align: left;
+        padding: 2.5%;
+        height: 100vh; }
+        .wrapper #skills-section h2, .wrapper #work-section h2 {
+          font-size: 1.3em; }
+        .wrapper #skills-section p, .wrapper #work-section p {
+          font-size: 1.1em; }
+        .wrapper #skills-section .intro, .wrapper #work-section .intro {
+          width: 100%;
+          text-align: center; }
+        .wrapper #skills-section .skill, .wrapper #skills-section .work, .wrapper #work-section .skill, .wrapper #work-section .work {
+          width: 29%;
+          padding: 0 2%; } }
+  .wrapper #skills-section {
+    background-color: #F26451; }
+  .wrapper #work-section .intro {
+    margin-bottom: 5%; }
+  .wrapper #work-section .work {
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    padding: 10%;
-    text-align: center; }
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%; }
+    .wrapper #work-section .work button {
+      border: 2px solid #434242;
+      border-radius: 3px;
+      width: 100px;
+      padding: 10px;
+      background-color: #faf6f0;
+      margin-top: 2%; }
+  @media only screen and (min-width: 780px) {
+    .wrapper #work-section .work img {
+      width: 100%; }
     .wrapper #work-section .intro {
-      margin-bottom: 5%; }
-    .wrapper #work-section .work {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .wrapper #work-section .work button {
-        border: 2px solid #434242;
-        border-radius: 3px;
-        width: 100px;
-        padding: 10px;
-        background-color: #faf6f0;
-        margin: 2%; }
+      margin-bottom: 0; }
+      .wrapper #work-section .intro h2 {
+        margin-top: 8%; } }
   .wrapper #contact {
-    display: flex;
-    flex-direction: column;
     height: 30vh;
-    padding: 10%;
     text-align: center; }
+    @media only screen and (min-width: 780px) {
+      .wrapper #contact {
+        height: 80vh; }
+        .wrapper #contact h2 {
+          font-size: 1.3em;
+          margin-top: 5%; }
+        .wrapper #contact p {
+          font-size: 1.1em; } }
 
 header {
   height: 100vh;
@@ -490,23 +517,20 @@ header {
   header .four {
     top: 61%;
     left: 38%; }
+  @media only screen and (min-width: 780px) {
+    header .one {
+      top: 17%;
+      left: 51%; }
+    header .two {
+      top: 45%;
+      left: 39%; }
+    header .three {
+      top: 23%;
+      left: 64%; }
+    header .four {
+      top: 69%;
+      left: 43%; } }
 
-@media screen and (min-width: 780px) {
-  .one {
-    top: 17%;
-    left: 51%; }
-
-  .two {
-    top: 45%;
-    left: 39%; }
-
-  .three {
-    top: 23%;
-    left: 64%; }
-
-  .four {
-    top: 69%;
-    left: 43%; } }
 .paper {
   position: fixed;
   border: solid #434242; }
