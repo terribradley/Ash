@@ -456,6 +456,8 @@ body {
         .wrapper #skills-section .intro, .wrapper #work-section .intro {
           width: 100%;
           text-align: center; }
+          .wrapper #skills-section .intro h2, .wrapper #work-section .intro h2 {
+            margin-top: 8%; }
         .wrapper #skills-section .skill, .wrapper #skills-section .work, .wrapper #work-section .skill, .wrapper #work-section .work {
           width: 29%;
           padding: 0 2%; } }
