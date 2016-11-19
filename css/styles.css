@@ -441,9 +441,12 @@ body {
       text-align: center; }
     .wrapper #skills-section p {
       font-size: 1.1em; }
-    .wrapper #skills-section .intro, .wrapper #skills-section .skill {
+    .wrapper #skills-section .intro {
       width: 70%;
-      margin: 2% 22% 2% 8%; }
+      margin: 15% 22% 0 8%; }
+    .wrapper #skills-section .skill {
+      width: 70%;
+      margin: 0 22% 5% 8%; }
     @media only screen and (min-width: 780px) {
       .wrapper #skills-section {
         flex-direction: row;
@@ -451,7 +454,8 @@ body {
         padding: 2.5%;
         height: 100vh; }
         .wrapper #skills-section h2 {
-          font-size: 1.3em; }
+          font-size: 1.5em;
+          text-align: center; }
         .wrapper #skills-section p {
           font-size: 1.1em; }
         .wrapper #skills-section .intro {
@@ -468,10 +472,10 @@ body {
     text-align: center;
     background-color: #faf6f0; }
     .wrapper #work-section h2 {
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center; }
     .wrapper #work-section p {
-      font-size: 1.5em; }
+      font-size: 1.1em; }
     .wrapper #work-section .intro {
       margin-bottom: 5%; }
     .wrapper #work-section .work {
@@ -482,6 +486,12 @@ body {
       margin-bottom: 4%;
       padding: 0 2%;
       width: 100%; }
+      .wrapper #work-section .work img {
+        width: 93%;
+        margin-right: 7%; }
+      .wrapper #work-section .work .description-text {
+        width: 80%;
+        margin: 2% 20% 2% 0; }
       .wrapper #work-section .work button {
         border: 2px solid #434242;
         border-radius: 3px;
@@ -508,8 +518,10 @@ body {
         .wrapper #work-section .intro h2 {
           margin-top: 8%; } }
   .wrapper #contact {
-    height: 30vh;
-    text-align: center; }
+    text-align: center;
+    width: 80%;
+    background-color: #f7cc8b;
+    padding: 10% 10% 30% 10%; }
     @media only screen and (min-width: 780px) {
       .wrapper #contact {
         height: 80vh; }

@@ -17,9 +17,13 @@ body {
     p {
       font-size: 1.1em;
     }
-    .intro, .skill {
+    .intro {
       width: 70%;
-      margin: 2% 22% 2% 8%;
+      margin: 15% 22% 0 8%;
+    }
+    .skill {
+      width: 70%;
+      margin: 0 22% 5% 8%;
     }
     @media only screen and (min-width: 780px) {
       flex-direction: row;
@@ -27,7 +31,8 @@ body {
       padding: 2.5%;
       height: 100vh;
       h2 {
-        font-size: 1.3em;
+        font-size: 1.5em;
+        text-align: center;
       }
       p {
         font-size: 1.1em;
@@ -52,11 +57,11 @@ body {
     text-align: center;
     background-color: $color-three;
     h2 {
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center;
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.1em;
     }
     .intro {
       margin-bottom: 5%;
@@ -69,6 +74,14 @@ body {
       margin-bottom: 4%;
       padding: 0 2%;
       width: 100%;
+      img {
+        width: 93%;
+        margin-right: 7%;
+      }
+      .description-text {
+        width: 80%;
+        margin: 2% 20% 2% 0;
+      }
       button {
         border: 2px solid $color-one;
         border-radius: 3px;
@@ -97,7 +110,6 @@ body {
           margin-left: 5%;
         }
       }
-
       .intro {
         margin-bottom: 0;
         h2 {
@@ -107,8 +119,10 @@ body {
     }
   }
   #contact {
-    height: 30vh;
     text-align: center;
+    width: 80%;
+    background-color: #f7cc8b;
+    padding: 10% 10% 30% 10%;
     @media only screen and (min-width: 780px) {
       height: 80vh;
       h2 {
