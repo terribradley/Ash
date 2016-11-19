@@ -18,52 +18,50 @@ header {
       width: 28%;
       position: absolute;
     }
-    // .one {
-    //   top: 29%;
-    //   left: 58%;
-    // }
-    // .two {
-    //   top: 40%;
-    //   left: 30%;
-    // }
-    // .three {
-    //   top: 42%;
-    //   left: 71%;
-    // }
-    // .four {
-    //   top: 61%;
-    //   left: 38%;
-    // }
-
-  }
-  @media only screen and (min-width: 780px) {
     .one {
-      top: 16%;
-      left: 46%;
-    }
-    .two {
-      top: 45%;
-      left: 36%;
-    }
-    .three {
-      top: 25%;
+      top: 29%;
       left: 58%;
     }
+    .two {
+      top: 40%;
+      left: 30%;
+    }
+    .three {
+      top: 42%;
+      left: 71%;
+    }
     .four {
-      top: 72%;
-      left: 41%;
-    }
-    .pillar-top {
-      top: 32%;
-      left: 44%;
-      z-index: 10;
-      transition-delay: 5ms;
-    }
-    .pillar-bottom {
-      top: 46%;
-      left: 43.7%;
-      transition-delay: 5ms;
+      top: 61%;
+      left: 38%;
     }
   }
-
+}
+@media (min-width: 780px) {
+  .one {
+    top: 16%;
+    left: 46%;
+  }
+  .two {
+    top: 45%;
+    left: 36%;
+  }
+  .three {
+    top: 25%;
+    left: 58%;
+  }
+  .four {
+    top: 72%;
+    left: 41%;
+  }
+  .pillar-top {
+    top: 38%;
+    left: 44%;
+    z-index: 10;
+    transition-delay: 5ms;
+  }
+  .pillar-bottom {
+    top: 43.8%;
+    left: 43.7%;
+    transition-delay: 5ms;
+  }
 }
