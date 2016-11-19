@@ -8,10 +8,10 @@ Error: Undefined variable: "$color-one".
 4:   h1 {
 5:     color: $color-one;
 6:   }
-7:   .logo {
-8:     position: absolute;
-9:   }
-10:   .center {
+7:   .fixed {
+8:     position: fixed;
+9:     width: 100%;
+10:     height: 100vh;
 
 Backtrace:
 scss/header.scss:5
@@ -77,4 +77,4 @@ scss/header.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-one\".\A         on line 5 of scss/header.scss\A \A 1: header {\A 2:   height: 100vh;\A 3:   position: relative;\A 4:   h1 {\A 5:     color: $color-one;\A 6:   }\A 7:   .logo {\A 8:     position: absolute;\A 9:   }\A 10:   .center {"; }
+  content: "Error: Undefined variable: \"$color-one\".\A         on line 5 of scss/header.scss\A \A 1: header {\A 2:   height: 100vh;\A 3:   position: relative;\A 4:   h1 {\A 5:     color: $color-one;\A 6:   }\A 7:   .fixed {\A 8:     position: fixed;\A 9:     width: 100%;\A 10:     height: 100vh;"; }
