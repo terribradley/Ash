@@ -514,6 +514,7 @@ body {
           flex-direction: row; }
           .wrapper #work-section .work-description img {
             width: 60%;
+            height: 398px;
             margin: 0 2% 0 0; }
           .wrapper #work-section .work-description .description-text {
             text-align: left;
