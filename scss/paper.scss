@@ -5,8 +5,8 @@
 }
 .paper.edge-top {
     top: 0;
-    right: 90px;
-    left: 27px;
+    right: 72px;
+    left: 19px;
     height: 27px;
     border-width: 0 0 3px 0;
     z-index: 101;
@@ -14,7 +14,7 @@
   }
   .paper.edge-right {
     top: 90px;
-    right: 0;
+    right: -9px;
     bottom: 27px;
     width: 27px;
     border-width: 0 0 0 3px;
@@ -23,39 +23,91 @@
   }
   .paper.edge-bottom {
     bottom: 0;
-    right: 27px;
-    left: 27px;
+    right: 19px;
+    left: 19px;
     height: 26px;
     border-width: 3px 0 0 0;
     z-index: 103;
     @include transition();
   }
   .paper.edge-left {
-    top: 27px;
-    left: 0;
+    top: 28px;
+    left: -9;
     bottom: 27px;
-    width: 27px;
+    width: 18px;
     border-width: 0 3px 0 0;
     z-index: 104;
   }
   label {
     position: fixed;
       img {
-        height: 66px;
-        width: 66px;
+        height: 65px;
+        width: 55px;
       }
       top: 27px;
-      right: 48px;
+      right: 28px;
       width: 45px;
       height: 45px;
       border: none;
-
       background-size: 100% 100%;
       background-repeat: no-repeat;
-      // white-space: nowrap;
-      // overflow: hidden;
       cursor: pointer;
       z-index: 105;
-
-
+  }
+@media screen and (min-width: 500px) {
+  .paper {
+    position: fixed;
+    border: solid $color-one;
+  }
+  .paper.edge-top {
+      top: 0;
+      right: 90px;
+      left: 27px;
+      height: 27px;
+      border-width: 0 0 3px 0;
+      z-index: 101;
+      @include transition();
+    }
+    .paper.edge-right {
+      top: 90px;
+      right: 0;
+      bottom: 27px;
+      width: 27px;
+      border-width: 0 0 0 3px;
+      z-index: 102;
+      @include transition();
+    }
+    .paper.edge-bottom {
+      bottom: 0;
+      right: 27px;
+      left: 27px;
+      height: 26px;
+      border-width: 3px 0 0 0;
+      z-index: 103;
+      @include transition();
+    }
+    .paper.edge-left {
+      top: 27px;
+      left: 0;
+      bottom: 27px;
+      width: 27px;
+      border-width: 0 3px 0 0;
+      z-index: 104;
+    }
+    label {
+      position: fixed;
+        img {
+          height: 66px;
+          width: 66px;
+        }
+        top: 27px;
+        right: 48px;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 105;
+    }
   }

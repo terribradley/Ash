@@ -7,13 +7,13 @@ Error: Undefined mixin 'transition'.
 3:   color: black;
 4:   position: fixed;
 5:   top: 27px;
-6:   right: 48px;
+6:   right: 28px;
 7:   @include transition();
 8:   z-index: 1;
-9: }
-10: .page-content {
-11:   position: relative;
-12:   z-index: 0;
+9:   @media screen and (min-width: 500px) {
+10:     right: 48px;
+11:   }
+12: }
 
 Backtrace:
 scss/nav.scss:7:in `transition'
@@ -64,11 +64,12 @@ scss/nav.scss:7
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 7 of scss/nav.scss, in `transition'\A         from line 7 of scss/nav.scss\A \A 2:   font-size: 2em;\A 3:   color: black;\A 4:   position: fixed;\A 5:   top: 27px;\A 6:   right: 48px;\A 7:   @include transition();\A 8:   z-index: 1;\A 9: }\A 10: .page-content {\A 11:   position: relative;\A 12:   z-index: 0;"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 7 of scss/nav.scss, in `transition'\A         from line 7 of scss/nav.scss\A \A 2:   font-size: 2em;\A 3:   color: black;\A 4:   position: fixed;\A 5:   top: 27px;\A 6:   right: 28px;\A 7:   @include transition();\A 8:   z-index: 1;\A 9:   @media screen and (min-width: 500px) {\A 10:     right: 48px;\A 11:   }\A 12: }"; }

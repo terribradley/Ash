@@ -369,11 +369,14 @@ textarea {
   color: black;
   position: fixed;
   top: 27px;
-  right: 48px;
+  right: 28px;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   z-index: 1; }
+  @media screen and (min-width: 500px) {
+    .toggle {
+      right: 48px; } }
 
 .page-content {
   position: relative;
@@ -434,47 +437,100 @@ body {
   .wrapper #skills-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
     background-color: #F26451; }
+    .wrapper #skills-section h1 {
+      font-size: 1.5em; }
     .wrapper #skills-section h2 {
-      font-size: 1.5em;
-      text-align: center; }
+      font-size: .9em; }
     .wrapper #skills-section p {
-      font-size: 1.1em; }
+      font-size: 1em; }
     .wrapper #skills-section .intro {
-      width: 70%;
-      margin: 15% 22% 0 8%; }
+      width: 72%;
+      margin: 15% 22% 0 9%; }
+      .wrapper #skills-section .intro h1 {
+        text-align: center; }
+        .wrapper #skills-section .intro h1:nth-of-type(2) {
+          margin-top: 10%; }
     .wrapper #skills-section .skill {
-      width: 70%;
-      margin: 0 22% 5% 8%; }
-    @media only screen and (min-width: 780px) {
+      width: 80%;
+      margin: 0 22% 5% 9%; }
+      .wrapper #skills-section .skill img {
+        width: 20%;
+        height: 24px;
+        margin-right: 6%; }
+      .wrapper #skills-section .skill ul {
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0; }
+        .wrapper #skills-section .skill ul li a {
+          text-decoration: none;
+          color: black; }
+    @media screen and (min-width: 760px) and (max-width: 779px) {
+      .wrapper #skills-section .intro {
+        width: 77%;
+        margin: 7% 19% 0 9%; }
+        .wrapper #skills-section .intro h1 {
+          text-align: center; }
+          .wrapper #skills-section .intro h1:nth-of-type(2) {
+            margin-top: 9%; }
+      .wrapper #skills-section .skill {
+        margin: 0 22% 2% 9%; }
+        .wrapper #skills-section .skill:nth-of-type(3) {
+          margin-bottom: 5%; }
+        .wrapper #skills-section .skill h1 {
+          text-align: left; }
+        .wrapper #skills-section .skill h2 {
+          font-size: 1.1em; } }
+    @media screen and (min-width: 780px) {
       .wrapper #skills-section {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
-        padding: 2.5%;
-        height: 100vh; }
-        .wrapper #skills-section h2 {
+        padding: 2.5%; }
+        .wrapper #skills-section h1 {
           font-size: 1.5em;
           text-align: center; }
+        .wrapper #skills-section h2 {
+          font-size: 1.1em; }
         .wrapper #skills-section p {
           font-size: 1.1em; }
         .wrapper #skills-section .intro {
-          width: 100%;
-          text-align: center;
-          margin: 0; }
-          .wrapper #skills-section .intro h2 {
+          width: 86%;
+          margin: 0 5%; }
+          .wrapper #skills-section .intro h1 {
             margin-top: 5%; }
+            .wrapper #skills-section .intro h1:nth-of-type(2) {
+              margin-top: 8%; }
         .wrapper #skills-section .skill {
-          width: 26%;
-          padding: 0 3%;
-          margin: 0; } }
+          width: 40%;
+          padding: 0 0 0 8%;
+          margin: 0 0 5% 0; }
+          .wrapper #skills-section .skill h1 {
+            text-align: left; } }
+    @media screen and (min-width: 1300px) {
+      .wrapper #skills-section {
+        padding: 2.5% 9%; }
+        .wrapper #skills-section h1 {
+          font-size: 2em;
+          text-align: left; }
+        .wrapper #skills-section h2 {
+          font-size: 1.3em; }
+        .wrapper #skills-section p {
+          font-size: 1.2em; }
+        .wrapper #skills-section ul li {
+          font-size: 1.3em; }
+        .wrapper #skills-section .intro {
+          width: 81%;
+          margin: 0 8%; }
+          .wrapper #skills-section .intro h1:nth-of-type(2) {
+            text-align: center; } }
   .wrapper #work-section {
     flex-direction: column;
     padding: 10%;
     text-align: center;
     background-color: #faf6f0; }
-    .wrapper #work-section h2 {
+    .wrapper #work-section h1 {
       font-size: 1.5em;
       text-align: center; }
     .wrapper #work-section p {
@@ -505,7 +561,7 @@ body {
     @media only screen and (min-width: 780px) {
       .wrapper #work-section {
         padding: 0 10%; }
-        .wrapper #work-section h2 {
+        .wrapper #work-section h1 {
           font-size: 1.3em; }
         .wrapper #work-section p {
           font-size: 1.1em; }
@@ -521,7 +577,7 @@ body {
             margin: 0; }
         .wrapper #work-section .intro {
           margin-bottom: 0; }
-          .wrapper #work-section .intro h2 {
+          .wrapper #work-section .intro h1 {
             margin: 8%; } }
   .wrapper #contact {
     text-align: center;
@@ -531,7 +587,7 @@ body {
     @media only screen and (min-width: 780px) {
       .wrapper #contact {
         padding: 10% 10% 20% 10%; }
-        .wrapper #contact h2 {
+        .wrapper #contact h1 {
           font-size: 1.3em;
           margin-top: 5%; }
         .wrapper #contact p {
@@ -571,10 +627,32 @@ header {
       z-index: 10;
       transition-delay: 5ms; }
     header .fixed .pillar-bottom {
-      top: 48.5%;
+      top: 49.3%;
       left: 35%;
       transition-delay: 5ms; }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 550px) and (max-width: 769px) {
+      header .fixed .one {
+        top: 16%;
+        left: 47%; }
+      header .fixed .two {
+        top: 45%;
+        left: 34%; }
+      header .fixed .three {
+        top: 25%;
+        left: 63%; }
+      header .fixed .four {
+        top: 72%;
+        left: 37%; }
+      header .fixed .pillar-top {
+        top: 33%;
+        left: 44%;
+        z-index: 10;
+        transition-delay: 5ms; }
+      header .fixed .pillar-bottom {
+        top: 50.1%;
+        left: 43.3%;
+        transition-delay: 5ms; } }
+    @media screen and (min-width: 770px) and (max-width: 1199px) {
       header .fixed .one {
         top: 16%;
         left: 46%; }
@@ -586,14 +664,36 @@ header {
         left: 58%; }
       header .fixed .four {
         top: 72%;
-        left: 41%; }
+        left: 39%; }
       header .fixed .pillar-top {
         top: 33%;
         left: 44%;
         z-index: 10;
         transition-delay: 5ms; }
       header .fixed .pillar-bottom {
-        top: 46.5%;
+        top: 50.6%;
+        left: 43.7%;
+        transition-delay: 5ms; } }
+    @media screen and (min-width: 1200px) {
+      header .fixed .one {
+        top: 16%;
+        left: 46%; }
+      header .fixed .two {
+        top: 50%;
+        left: 36%; }
+      header .fixed .three {
+        top: 21%;
+        left: 58%; }
+      header .fixed .four {
+        top: 72%;
+        left: 40%; }
+      header .fixed .pillar-top {
+        top: 33%;
+        left: 44%;
+        z-index: 10;
+        transition-delay: 5ms; }
+      header .fixed .pillar-bottom {
+        top: 48.8%;
         left: 43.7%;
         transition-delay: 5ms; } }
 
@@ -603,8 +703,8 @@ header {
 
 .paper.edge-top {
   top: 0;
-  right: 90px;
-  left: 27px;
+  right: 72px;
+  left: 19px;
   height: 27px;
   border-width: 0 0 3px 0;
   z-index: 101;
@@ -614,7 +714,7 @@ header {
 
 .paper.edge-right {
   top: 90px;
-  right: 0;
+  right: -9px;
   bottom: 27px;
   width: 27px;
   border-width: 0 0 0 3px;
@@ -625,8 +725,8 @@ header {
 
 .paper.edge-bottom {
   bottom: 0;
-  right: 27px;
-  left: 27px;
+  right: 19px;
+  left: 19px;
   height: 26px;
   border-width: 3px 0 0 0;
   z-index: 103;
@@ -635,17 +735,17 @@ header {
   transition: all 0.15s ease-out 0s; }
 
 .paper.edge-left {
-  top: 27px;
-  left: 0;
+  top: 28px;
+  left: -9;
   bottom: 27px;
-  width: 27px;
+  width: 18px;
   border-width: 0 3px 0 0;
   z-index: 104; }
 
 label {
   position: fixed;
   top: 27px;
-  right: 48px;
+  right: 28px;
   width: 45px;
   height: 45px;
   border: none;
@@ -654,7 +754,68 @@ label {
   cursor: pointer;
   z-index: 105; }
   label img {
-    height: 66px;
-    width: 66px; }
+    height: 65px;
+    width: 55px; }
+
+@media screen and (min-width: 500px) {
+  .paper {
+    position: fixed;
+    border: solid #434242; }
+
+  .paper.edge-top {
+    top: 0;
+    right: 90px;
+    left: 27px;
+    height: 27px;
+    border-width: 0 0 3px 0;
+    z-index: 101;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+
+  .paper.edge-right {
+    top: 90px;
+    right: 0;
+    bottom: 27px;
+    width: 27px;
+    border-width: 0 0 0 3px;
+    z-index: 102;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+
+  .paper.edge-bottom {
+    bottom: 0;
+    right: 27px;
+    left: 27px;
+    height: 26px;
+    border-width: 3px 0 0 0;
+    z-index: 103;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+
+  .paper.edge-left {
+    top: 27px;
+    left: 0;
+    bottom: 27px;
+    width: 27px;
+    border-width: 0 3px 0 0;
+    z-index: 104; }
+
+  label {
+    position: fixed;
+    top: 27px;
+    right: 48px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 105; }
+    label img {
+      height: 66px;
+      width: 66px; } }
 
 /*# sourceMappingURL=styles.css.map */

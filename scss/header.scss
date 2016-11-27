@@ -41,11 +41,40 @@ header {
       transition-delay: 5ms;
     }
     .pillar-bottom {
-      top: 48.5%;
+      top: 49.3%;
       left: 35%;
       transition-delay: 5ms;
     }
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 550px) and (max-width: 769px) {
+      .one {
+        top: 16%;
+        left: 47%;
+      }
+      .two {
+        top: 45%;
+        left: 34%;
+      }
+      .three {
+        top: 25%;
+        left: 63%;
+      }
+      .four {
+        top: 72%;
+        left: 37%;
+      }
+      .pillar-top {
+        top: 33%;
+        left: 44%;
+        z-index: 10;
+        transition-delay: 5ms;
+      }
+      .pillar-bottom {
+        top: 50.1%;
+        left: 43.3%;
+        transition-delay: 5ms;
+      }
+    }
+    @media screen and ( min-width: 770px) and (max-width: 1199px) {
       .one {
         top: 16%;
         left: 46%;
@@ -60,7 +89,7 @@ header {
       }
       .four {
         top: 72%;
-        left: 41%;
+        left: 39%;
       }
       .pillar-top {
         top: 33%;
@@ -69,7 +98,36 @@ header {
         transition-delay: 5ms;
       }
       .pillar-bottom {
-        top: 46.5%;
+        top: 50.6%;
+        left: 43.7%;
+        transition-delay: 5ms;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .one {
+        top: 16%;
+        left: 46%;
+      }
+      .two {
+        top: 50%;
+        left: 36%;
+      }
+      .three {
+        top: 21%;
+        left: 58%;
+      }
+      .four {
+        top: 72%;
+        left: 40%;
+      }
+      .pillar-top {
+        top: 33%;
+        left: 44%;
+        z-index: 10;
+        transition-delay: 5ms;
+      }
+      .pillar-bottom {
+        top: 48.8%;
         left: 43.7%;
         transition-delay: 5ms;
       }

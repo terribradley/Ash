@@ -3,9 +3,12 @@
   color: black;
   position: fixed;
   top: 27px;
-  right: 48px;
+  right: 28px;
   @include transition();
   z-index: 1;
+  @media screen and (min-width: 500px) {
+    right: 48px;
+  }
 }
 .page-content {
   position: relative;
