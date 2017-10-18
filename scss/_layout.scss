@@ -8,7 +8,7 @@ body {
     color: white;
     font-family: 'Lato', sans-serif;
     &:hover {
-      color: orange}
+      color: $color-two;
     }
   }
 
@@ -27,6 +27,10 @@ body {
       font-size: .9em;
       line-height: 22px;
       font-family: 'Lato', sans-serif;
+      letter-spacing: 1.2px;
+    }
+    h2 a {
+      letter-spacing: 1.2px;
     }
     .social-links {
       margin-top: 15%;
@@ -38,8 +42,5 @@ body {
       }
 
     }
-
-
-
-
   }
+}

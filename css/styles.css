@@ -431,27 +431,29 @@ body {
     color: white;
     font-family: 'Lato', sans-serif; }
     body a:hover {
-      color: orange; }
-
-.left .bio {
-  padding: 10% 25%; }
-  .left .bio a {
-    font-size: .8em; }
-  .left .bio h1 {
-    color: white;
-    font-family: 'Noto Serif', serif; }
-  .left .bio p {
-    color: white;
-    font-size: .9em;
-    line-height: 22px;
-    font-family: 'Lato', sans-serif; }
-  .left .bio .social-links {
-    margin-top: 15%;
-    display: flex;
-    justify-content: center; }
-    .left .bio .social-links img {
-      height: 38px;
-      width: auto; }
+      color: #FFB03E; }
+  body .left .bio {
+    padding: 10% 25%; }
+    body .left .bio a {
+      font-size: .8em; }
+    body .left .bio h1 {
+      color: white;
+      font-family: 'Noto Serif', serif; }
+    body .left .bio p {
+      color: white;
+      font-size: .9em;
+      line-height: 22px;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 1.2px; }
+    body .left .bio h2 a {
+      letter-spacing: 1.2px; }
+    body .left .bio .social-links {
+      margin-top: 15%;
+      display: flex;
+      justify-content: center; }
+      body .left .bio .social-links img {
+        height: 38px;
+        width: auto; }
 
 header {
   height: 100vh;
@@ -506,13 +508,16 @@ header {
     header .sculpture h1 {
       font-size: 1em;
       color: white; }
+    header .sculpture h2 {
+      font-family: 'Noto Serif', serif; }
   header .hair {
     width: 50vw;
     background-image: url("../img/gradiant.png");
     background-position: center;
     padding: 5% 1% 0 1%; }
     header .hair h2 {
-      margin-top: 13.2%; }
+      margin-top: 13.2%;
+      font-family: 'Noto Serif', serif; }
 
 label {
   position: fixed;
