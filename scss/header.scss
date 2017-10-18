@@ -1,78 +1,79 @@
 header {
   height: 100vh;
   position: relative;
-  h1 {
-    color: $color-one;
+  width: 100%;
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 30%;
+    h1 {
+      color: $color-one;
+      margin-bottom: 0;
+      font-family: 'Noto Serif', serif;
+      font-weight: 500;
+      letter-spacing: 3px;
+
+    }
+    h2 {
+      color: $color-one;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
   }
   .fixed {
-    position: fixed;
-    width: 100%;
+    // position: fixed;
+    width: 49vw;
     height: 100vh;
-    .logo, .pillar-bottom, .pillar-top {
-      position: absolute;
-      img {
-        width: 100px;
-      }
+    background-image: url("../img/background-blue.png");
+    padding-right: 5%;
+  }
+  .one {
+    align-items: flex-start;
+    padding-top: 5%;
+    margin-left: 2%;
+    h1 {
+      font-size: 1em;
     }
-    .center {
-      width: 28%;
-      position: absolute;
+  }
+  .sub-page {
+    display: flex;
+    width: 100vw;
+    .about-pic {
+      width: 49vw;
+      background-image: url("../img/ash-image.png");
+      background-size: cover;
+      height: 100vh;
     }
-    .one {
-      top: 19%;
-      left: 39%;
+  }
+  #gallery {
+    display: flex;
+    width: 100vw;
+
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      color: $color-one;
     }
-    .two {
-      top: 50%;
-      left: 23%;
+  }
+  .sculpture {
+    width: 50vw;
+    margin-right: auto;
+    padding: 5% 1% 0 1%;
+    h1 {
+      font-size: 1em;
+      color: $color-one;
     }
-    .three {
-      top: 25%;
-      left: 66%;
-    }
-    .four {
-      top: 71%;
-      left: 27%;
-    }
-    .pillar-top {
-      top: 34.3%;
-      left: 36%;
-      z-index: 10;
-      transition-delay: 5ms;
-    }
-    .pillar-bottom {
-      top: 48.5%;
-      left: 35%;
-      transition-delay: 5ms;
-    }
-    @media screen and (min-width: 780px) {
-      .one {
-        top: 16%;
-        left: 46%;
-      }
-      .two {
-        top: 45%;
-        left: 36%;
-      }
-      .three {
-        top: 25%;
-        left: 58%;
-      }
-      .four {
-        top: 72%;
-        left: 41%;
-      }
-      .pillar-top {
-        top: 33%;
-        left: 44%;
-        z-index: 10;
-        transition-delay: 5ms;
-      }
-      .pillar-bottom {
-        top: 46.5%;
-        left: 43.7%;
-        transition-delay: 5ms;
-      }
+  }
+  .hair {
+    width: 50vw;
+    background-image: url("../img/gradiant.png");
+    background-position: center;
+    padding: 5% 1% 0 1%;
+    h2 {
+      margin-top: 13.2%;
+
     }
   }
 }

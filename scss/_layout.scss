@@ -1,227 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Lato|Noto+Serif');
+
 body {
-  background-color: $color-three;
-}
+  background-image: url("../img/gradiant.png");
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  #skills-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: $color-two;
-    h2 {
-      font-size: 1.5em;
-      text-align: center;
-    }
-    p {
-      font-size: 1.1em;
-    }
-    .intro {
-      width: 70%;
-      margin: 15% 22% 0 8%;
-    }
-    .skill {
-      width: 70%;
-      margin: 0 22% 5% 8%;
-    }
-    @media only screen and (min-width: 780px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      text-align: left;
-      padding: 2.5%;
-      height: 100vh;
-      h2 {
-        font-size: 1.5em;
-        text-align: center;
-      }
-      p {
-        font-size: 1.1em;
-      }
-      .intro {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        h2 {
-          margin-top: 5%
-        }
-      }
-      .skill {
-        width: 26%;
-        padding: 0 3%;
-        margin: 0;
-      }
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    &:hover {
+      color: orange}
     }
   }
 
-  #work-section {
-    flex-direction: column;
-    padding: 10%;
-    text-align: center;
-    background-color: $color-three;
-    h2 {
-      font-size: 1.5em;
-      text-align: center;
+
+  .left .bio {
+    padding: 10% 25%;
+    a {
+      font-size: .8em;
+    }
+    h1 {
+      color: $color-one;
+      font-family: 'Noto Serif', serif;
     }
     p {
-      font-size: 1.1em;
+      color: $color-one;
+      font-size: .9em;
+      line-height: 22px;
+      font-family: 'Lato', sans-serif;
     }
-    .intro {
-      margin-bottom: 5%;
-    }
-    .work {
+    .social-links {
+      margin-top: 15%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-bottom: 4%;
-      padding: 0 2%;
-      width: 100%;
       img {
-        width: 93%;
-        margin-right: 7%;
+        height: 38px;
+        width: auto;
       }
-      .description-text {
-        width: 80%;
-        margin: 2% 20% 2% 0;
-      }
-      button {
-        border: 2px solid $color-one;
-        border-radius: 3px;
-        width: 100px;
-        padding: 10px;
-        background-color: $color-three;
-        margin-top: 2%;
-      }
+
     }
-    @media only screen and (min-width: 780px) {
-      padding: 0 10%;;
-      h2 {
-        font-size: 1.3em;
-      }
-      p {
-        font-size: 1.1em;
-      }
-      .work-description {
-        display: flex;
-        flex-direction: row;
-        img {
-          width: 60%;
-          height: 398px;
-          margin: 0 2% 0 0;
-        }
-        .description-text {
-          text-align: left;
-          margin: 0;
-        }
-      }
-      .intro {
-        margin-bottom: 0;
-        h2 {
-          margin: 8%
-        }
-      }
-    }
+
+
+
+
   }
-  #contact {
-    text-align: center;
-    width: 80%;
-    background-color: #f7cc8b;
-    padding: 10% 10% 30% 10%;
-    @media only screen and (min-width: 780px) {
-      padding: 10% 10% 20% 10%;
-      h2 {
-        font-size: 1.3em;
-        margin-top: 5%;
-      }
-      p {
-        font-size: 1.1em;
-      }
-    }
-  }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   #skills, #work-section, #resume-section {
-//     padding: 0 10%;
-//     display: flex;
-//     flex-direction: column;
-//     width: 80%;
-//     height: 70vh;
-//     @media screen and (min-width: 780px) {
-//       height: 100vh;
-//     }
-//     h2 {
-//       text-align: center;
-//
-//     }
-//     @media screen and (min-width: 780px) {
-//       flex-direction: row;
-//       justify-content: space-between;
-//       flex-wrap: wrap;
-//       width: 85%;
-//       padding: 0 7.5%;
-//     }
-//   }
-//   #skills {
-//     background-color: $color-two;
-//       height: 150vh;
-//       @media screen and (min-width: 780px) {
-//       height: 100vh;
-//     }
-//   }
-//   #contact {
-//     padding: 0 10%;
-//     display: flex;
-//     flex-direction: column;
-//     width: 80%;
-//     height: 100vh;
-//     p {
-//       text-align: center;
-//     }
-//     h2 {
-//       text-align: center;
-//       margin-top: 10%;
-//       @media screen and (min-width: 780px) {
-//         margin-top: 8%;
-//       }
-//     }
-//     .info {
-//       width: 50%;
-//       margin: 0 25%;
-//     }
-//   }
-//   .intro {
-//     width: 100%;
-//     margin-top: 10%;
-//     p {
-//       text-align: center;
-//     }
-//   }
-//   .skill, .work {
-//     img {
-//       width: 100%;
-//     }
-//     @media screen and (min-width: 780px) {
-//       width: 30%;
-//     }
-//   }
-// }

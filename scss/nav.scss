@@ -1,6 +1,4 @@
 .toggle {
-  font-size: 2em;
-  color: black;
   position: fixed;
   top: 27px;
   right: 48px;
@@ -16,7 +14,8 @@
   z-index: 0;
   @include position(fixed, 50px 0px 0 110%);
   @include transition();
-  width: 130px;
+  width: 50%;
+  top: 25%;
   height: 100vh;
   padding: 1%;
   color: $color-one;
@@ -27,12 +26,11 @@
     li {
       margin-right: 3%;
       list-style: none;
-      font-size: 1em;
-      margin-bottom: 16px;
+      margin-bottom: 45px;
       text-decoration: none;
       color: black;
-      font-family: 'Roboto', sans-serif;
-      font-size: 1.2em;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.8em;
       &:hover {
         text-decoration: underline;
       }
@@ -44,22 +42,22 @@
   @media screen and (min-width: 768px) {
   &:checked + .wrapper {
     .sidebar {
-      left: 85%;
+      left: 60%;
     }
     .toggle {
-      right: 200px;
+      right: 39%;
     }
-    .page-content {
-      padding-right: 14%;
+    .left {
+      display: none;
     }
-    .paper.edge-top {
-      right: 243px;
+    .right {
+      margin-right: 30%;
     }
-    .paper.edge-bottom {
-      right: 179px;
+    .sculpture {
+      display: none;
     }
-    .paper.edge-right {
-      right: 152px;
+    .hair {
+      margin-right: 30%;
     }
   }
     }
