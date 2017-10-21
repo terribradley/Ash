@@ -3,7 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Domine|Lato|Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Lato|Noto+Serif|Yanone+Kaffeesatz");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -406,7 +406,7 @@ textarea {
       font-family: 'Lato', sans-serif;
       font-size: 1.8em; }
       .sidebar ul li:hover {
-        text-decoration: underline; }
+        text-transform: italic; }
 
 #sidebar-toggler {
   display: none; }
@@ -425,15 +425,16 @@ textarea {
       margin-right: 30%; } }
 
 body {
-  background-image: url("../img/gradiant.png"); }
+  background-image: url("../img/gradiant2.png");
+  background-position: right; }
   body a {
     text-decoration: none;
     color: white;
     font-family: 'Lato', sans-serif; }
     body a:hover {
-      color: #FFB03E; }
+      color: #B0942D; }
   body .left .bio {
-    padding: 10% 25%; }
+    padding: 5% 25%; }
     body .left .bio a {
       font-size: .8em; }
     body .left .bio h1 {
@@ -456,7 +457,7 @@ body {
         width: auto; }
 
 header {
-  height: 100vh;
+  height: 100%;
   position: relative;
   width: 100%; }
   header .logo {
@@ -472,14 +473,18 @@ header {
       letter-spacing: 3px; }
     header .logo h2 {
       color: white;
-      font-family: 'Lato', sans-serif;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
       font-weight: 500;
-      letter-spacing: 1px; }
+      letter-spacing: 4.2px; }
   header .fixed {
     width: 49vw;
     height: 100vh;
     background-image: url("../img/background-blue.png");
+    background-repeat: repeat;
     padding-right: 5%; }
+  header .work-fixed {
+    height: 155vh;
+    padding-right: 0; }
   header .one {
     align-items: flex-start;
     padding-top: 5%;
@@ -488,12 +493,14 @@ header {
       font-size: 1em; }
   header .sub-page {
     display: flex;
-    width: 100vw; }
+    width: 100vw;
+    height: 125vh;
+    background-image: url("../img/background-blue.png"); }
     header .sub-page .about-pic {
       width: 49vw;
       background-image: url("../img/ash-image.png");
       background-size: cover;
-      height: 100vh; }
+      height: 125vh; }
   header #gallery {
     display: flex;
     width: 100vw; }
@@ -504,20 +511,31 @@ header {
   header .sculpture {
     width: 50vw;
     margin-right: auto;
-    padding: 5% 1% 0 1%; }
+    padding: 5% 1% 0 1%;
+    height: 225vh;
+    background-image: url("../img/background-blue.png"); }
     header .sculpture h1 {
       font-size: 1em;
       color: white; }
     header .sculpture h2 {
       font-family: 'Noto Serif', serif; }
+    header .sculpture img {
+      height: 250px;
+      width: auto;
+      margin: 1%; }
   header .hair {
     width: 50vw;
-    background-image: url("../img/gradiant.png");
-    background-position: center;
+    background-image: url("../img/gradiant2.png");
+    background-position: top;
+    background-size: cover;
     padding: 5% 1% 0 1%; }
     header .hair h2 {
       margin-top: 13.2%;
       font-family: 'Noto Serif', serif; }
+    header .hair img {
+      height: 250px;
+      width: auto;
+      margin: 1%; }
 
 label {
   position: fixed;

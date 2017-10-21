@@ -32,11 +32,15 @@
       font-family: 'Lato', sans-serif;
       font-size: 1.8em;
       &:hover {
-        text-decoration: underline;
+        text-transform: italic;
       }
     }
   }
 }
+// .work-sidebar {
+//   height: 220vh;
+//   background-image: url("../img/background-blue.png");
+// }
 #sidebar-toggler {
   display: none;
   @media screen and (min-width: 768px) {
