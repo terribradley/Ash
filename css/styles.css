@@ -446,8 +446,11 @@ textarea {
       margin-right: 30%; } }
 
 body {
-  background-image: url("../img/gradiant2.png");
+  background-image: url("../img/mylar-10.jpg");
   background-position: right; }
+  @media screen and (max-width: 450px) {
+    body {
+      background-image: url("../img/background-blue.png"); } }
   body a {
     text-decoration: none;
     color: white;
@@ -470,12 +473,13 @@ body {
     body .left .bio h2 a {
       letter-spacing: 1.2px; }
     body .left .bio .social-links {
-      margin-top: 15%;
-      display: flex;
-      justify-content: center; }
+      margin-top: 15%; }
       body .left .bio .social-links img {
         height: 38px;
         width: auto; }
+    @media screen and (max-width: 450px) {
+      body .left .bio {
+        padding: 5% 23% 5% 8%; } }
 
 header {
   height: 100%;
