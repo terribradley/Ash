@@ -379,6 +379,9 @@ textarea {
       right: 20px; } }
   .toggle img {
     width: 70%; }
+  @media screen and (min-width: 500px) {
+    .toggle {
+      right: 48px; } }
 
 .page-content {
   position: relative;
