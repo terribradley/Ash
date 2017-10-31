@@ -368,11 +368,17 @@ textarea {
 .toggle {
   position: fixed;
   top: 27px;
-  right: 48px;
+  right: 95px;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
   z-index: 1; }
+  @media screen and (max-width: 450px) {
+    .toggle {
+      top: 52px;
+      right: 20px; } }
+  .toggle img {
+    width: 70%; }
 
 .page-content {
   position: relative;
@@ -415,6 +421,21 @@ textarea {
       left: 60%; }
     #sidebar-toggler:checked + .wrapper .toggle {
       right: 39%; }
+    #sidebar-toggler:checked + .wrapper .left {
+      display: none; }
+    #sidebar-toggler:checked + .wrapper .right {
+      margin-right: 30%; }
+    #sidebar-toggler:checked + .wrapper .sculpture {
+      display: none; }
+    #sidebar-toggler:checked + .wrapper .hair {
+      margin-right: 30%; } }
+  @media screen and (max-width: 450px) {
+    #sidebar-toggler:checked + .wrapper .sidebar {
+      left: 30%; }
+    #sidebar-toggler:checked + .wrapper .toggle {
+      right: 65%; }
+    #sidebar-toggler:checked + .wrapper #header {
+      right: 100%; }
     #sidebar-toggler:checked + .wrapper .left {
       display: none; }
     #sidebar-toggler:checked + .wrapper .right {

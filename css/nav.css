@@ -1,22 +1,23 @@
 /*
 Error: Undefined mixin 'transition'.
-        on line 5 of scss/nav.scss, in `transition'
-        from line 5 of scss/nav.scss
+        on line 12 of scss/nav.scss, in `transition'
+        from line 12 of scss/nav.scss
 
-1: .toggle {
-2:   position: fixed;
-3:   top: 27px;
-4:   right: 48px;
-5:   @include transition();
-6:   z-index: 1;
-7: }
-8: .page-content {
-9:   position: relative;
-10:   z-index: 0;
+7:     right: 20px;
+8:   }
+9:   img {
+10:     width: 70%;
+11:   }
+12:   @include transition();
+13:   z-index: 1;
+14: }
+15: .page-content {
+16:   position: relative;
+17:   z-index: 0;
 
 Backtrace:
-scss/nav.scss:5:in `transition'
-scss/nav.scss:5
+scss/nav.scss:12:in `transition'
+scss/nav.scss:12
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
@@ -71,4 +72,4 @@ scss/nav.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 5 of scss/nav.scss, in `transition'\A         from line 5 of scss/nav.scss\A \A 1: .toggle {\A 2:   position: fixed;\A 3:   top: 27px;\A 4:   right: 48px;\A 5:   @include transition();\A 6:   z-index: 1;\A 7: }\A 8: .page-content {\A 9:   position: relative;\A 10:   z-index: 0;"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 12 of scss/nav.scss, in `transition'\A         from line 12 of scss/nav.scss\A \A 7:     right: 20px;\A 8:   }\A 9:   img {\A 10:     width: 70%;\A 11:   }\A 12:   @include transition();\A 13:   z-index: 1;\A 14: }\A 15: .page-content {\A 16:   position: relative;\A 17:   z-index: 0;"; }
