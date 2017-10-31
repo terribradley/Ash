@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-one".
-        on line 11 of scss/header.scss
+        on line 14 of scss/header.scss
 
-6:     display: flex;
-7:     flex-direction: column;
-8:     align-items: flex-end;
 9:     padding-top: 30%;
-10:     h1 {
-11:       color: $color-one;
-12:       margin-bottom: 0;
-13:       font-family: 'Noto Serif', serif;
-14:       font-weight: 500;
-15:       letter-spacing: 3px;
-16: 
+10:     @media screen and (max-width: 450px) {
+11:       align-items: center;
+12:     }
+13:     h1 {
+14:       color: $color-one;
+15:       margin-bottom: 0;
+16:       font-family: 'Noto Serif', serif;
+17:       font-weight: 500;
+18:       letter-spacing: 3px;
+19: 
 
 Backtrace:
-scss/header.scss:11
+scss/header.scss:14
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -90,4 +90,4 @@ scss/header.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-one\".\A         on line 11 of scss/header.scss\A \A 6:     display: flex;\A 7:     flex-direction: column;\A 8:     align-items: flex-end;\A 9:     padding-top: 30%;\A 10:     h1 {\A 11:       color: $color-one;\A 12:       margin-bottom: 0;\A 13:       font-family: 'Noto Serif', serif;\A 14:       font-weight: 500;\A 15:       letter-spacing: 3px;\A 16: "; }
+  content: "Error: Undefined variable: \"$color-one\".\A         on line 14 of scss/header.scss\A \A 9:     padding-top: 30%;\A 10:     @media screen and (max-width: 450px) {\A 11:       align-items: center;\A 12:     }\A 13:     h1 {\A 14:       color: $color-one;\A 15:       margin-bottom: 0;\A 16:       font-family: 'Noto Serif', serif;\A 17:       font-weight: 500;\A 18:       letter-spacing: 3px;\A 19: "; }

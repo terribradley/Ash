@@ -1,7 +1,14 @@
 .toggle {
   position: fixed;
   top: 27px;
-  right: 48px;
+  right: 95px;
+  @media screen and (max-width: 450px) {
+    top: 52px;
+    right: 20px;
+  }
+  img {
+    width: 70%;
+  }
   @include transition();
   z-index: 1;
 }
@@ -64,5 +71,30 @@
       margin-right: 30%;
     }
   }
+    }
+  @media screen and (max-width: 450px) {
+    &:checked + .wrapper {
+      .sidebar {
+        left: 30%;
+      }
+      .toggle {
+        right: 65%;
+      }
+      #header {
+        right: 100%;
+      }
+      .left {
+        display: none;
+      }
+      .right {
+        margin-right: 30%;
+      }
+      .sculpture {
+        display: none;
+      }
+      .hair {
+        margin-right: 30%;
+      }
+    }
     }
 }

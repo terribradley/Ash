@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Noto+Serif|Yanone+Kaffeesatz');
 
 body {
-  background-image: url("../img/gradiant2.png");
+  background-image: url("../img/mylar-10.jpg");
   background-position: right;
+  @media screen and (max-width: 450px) {
+    background-image: url("../img/background-blue.png");
+  }
 
   a {
     text-decoration: none;
@@ -35,13 +38,13 @@ body {
     }
     .social-links {
       margin-top: 15%;
-      display: flex;
-      justify-content: center;
       img {
         height: 38px;
         width: auto;
       }
-
+    }
+    @media screen and (max-width: 450px) {
+      padding: 5% 23% 5% 8%;
     }
   }
 }
