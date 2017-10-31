@@ -6,7 +6,6 @@ body {
   @media screen and (max-width: 450px) {
     background-image: url("../img/background-blue.png");
   }
-
   a {
     text-decoration: none;
     color: white;
@@ -15,8 +14,6 @@ body {
       color: $color-two;
     }
   }
-
-
   .left .bio {
     padding: 5% 25%;
     a {
