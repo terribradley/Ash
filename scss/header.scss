@@ -7,6 +7,9 @@ header {
     flex-direction: column;
     align-items: flex-end;
     padding-top: 30%;
+    @media screen and (max-width: 450px) {
+      align-items: center;
+    }
     h1 {
       color: $color-one;
       margin-bottom: 0;
@@ -29,6 +32,13 @@ header {
     background-image: url("../img/background-blue.png");
     background-repeat: repeat;
     padding-right: 5%;
+    @media screen and (max-width: 450px) {
+      width: 100vw;
+      align-items: center;
+      h1 {
+        font-size: 1.6em;
+      }
+    }
   }
   .work-fixed {
     height: 155vh;
@@ -41,12 +51,15 @@ header {
     h1 {
       font-size: 1em;
     }
+    @media screen and (max-width: 450px) {
+      margin-left: 8%;
+    }
   }
   .sub-page {
     display: flex;
     width: 100vw;
     // width: 49vw;
-    height: 125vh ;
+    height: 135vh ;
     background-image: url("../img/background-blue.png");
     // background-repeat: repeat;
     // padding-right: 5%;
@@ -54,12 +67,22 @@ header {
       width: 49vw;
       background-image: url("../img/ash-image.png");
       background-size: cover;
-      height: 125vh;
+      height: 135vh;
+      @media screen and (max-width: 450px) {
+        width: 100vw;
+        height: 57vh;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
     }
   }
   #gallery {
     display: flex;
     width: 100vw;
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+    }
 
     h2 {
       text-align: center;
@@ -76,6 +99,10 @@ header {
     h1 {
       font-size: 1em;
       color: $color-one;
+      margin-bottom: 3em;
+      @media screen and (max-width: 450px) {
+        margin-left: 4%;
+      }
     }
     h2  {
       font-family: 'Noto Serif', serif;
@@ -84,14 +111,22 @@ header {
       height: 250px;
       width: auto;
       margin: 1%;
+      @media screen and (max-width: 450px) {
+        height: 225px;
+        width: auto;
+        margin: 2%;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      width: 100vw;
     }
   }
   .hair {
     width: 50vw;
-    background-image: url("../img/gradiant2.png");
+    background-image: url("../img/mylar-10.jpg");
     background-position: top;
     background-size: cover;
-    padding: 5% 1% 0 1%;
+    padding: 11.5% 1% 0 1%;
     h2 {
       margin-top: 13.2%;
       font-family: 'Noto Serif', serif;
@@ -100,6 +135,9 @@ header {
       height: 250px;
       width: auto;
       margin: 1%;
+    }
+    @media screen and (max-width: 450px) {
+      width: 100vw;
     }
   }
 }

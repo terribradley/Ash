@@ -465,6 +465,9 @@ header {
     flex-direction: column;
     align-items: flex-end;
     padding-top: 30%; }
+    @media screen and (max-width: 450px) {
+      header .logo {
+        align-items: center; } }
     header .logo h1 {
       color: white;
       margin-bottom: 0;
@@ -482,6 +485,12 @@ header {
     background-image: url("../img/background-blue.png");
     background-repeat: repeat;
     padding-right: 5%; }
+    @media screen and (max-width: 450px) {
+      header .fixed {
+        width: 100vw;
+        align-items: center; }
+        header .fixed h1 {
+          font-size: 1.6em; } }
   header .work-fixed {
     height: 155vh;
     padding-right: 0; }
@@ -491,19 +500,32 @@ header {
     margin-left: 2%; }
     header .one h1 {
       font-size: 1em; }
+    @media screen and (max-width: 450px) {
+      header .one {
+        margin-left: 8%; } }
   header .sub-page {
     display: flex;
     width: 100vw;
-    height: 125vh;
+    height: 135vh;
     background-image: url("../img/background-blue.png"); }
     header .sub-page .about-pic {
       width: 49vw;
       background-image: url("../img/ash-image.png");
       background-size: cover;
-      height: 125vh; }
+      height: 135vh; }
+      @media screen and (max-width: 450px) {
+        header .sub-page .about-pic {
+          width: 100vw;
+          height: 57vh; } }
+    @media screen and (max-width: 450px) {
+      header .sub-page {
+        flex-direction: column; } }
   header #gallery {
     display: flex;
     width: 100vw; }
+    @media screen and (max-width: 450px) {
+      header #gallery {
+        flex-direction: column; } }
     header #gallery h2 {
       text-align: center;
       font-size: 1.8em;
@@ -516,19 +538,31 @@ header {
     background-image: url("../img/background-blue.png"); }
     header .sculpture h1 {
       font-size: 1em;
-      color: white; }
+      color: white;
+      margin-bottom: 3em; }
+      @media screen and (max-width: 450px) {
+        header .sculpture h1 {
+          margin-left: 4%; } }
     header .sculpture h2 {
       font-family: 'Noto Serif', serif; }
     header .sculpture img {
       height: 250px;
       width: auto;
       margin: 1%; }
+      @media screen and (max-width: 450px) {
+        header .sculpture img {
+          height: 225px;
+          width: auto;
+          margin: 2%; } }
+    @media screen and (max-width: 450px) {
+      header .sculpture {
+        width: 100vw; } }
   header .hair {
     width: 50vw;
-    background-image: url("../img/gradiant2.png");
+    background-image: url("../img/mylar-10.jpg");
     background-position: top;
     background-size: cover;
-    padding: 5% 1% 0 1%; }
+    padding: 11.5% 1% 0 1%; }
     header .hair h2 {
       margin-top: 13.2%;
       font-family: 'Noto Serif', serif; }
@@ -536,6 +570,9 @@ header {
       height: 250px;
       width: auto;
       margin: 1%; }
+    @media screen and (max-width: 450px) {
+      header .hair {
+        width: 100vw; } }
 
 label {
   position: fixed;
