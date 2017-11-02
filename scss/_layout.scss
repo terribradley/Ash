@@ -11,7 +11,7 @@ body {
     color: white;
     font-family: 'Lato', sans-serif;
     &:hover {
-      color: $color-two;
+      color: #6968E8;
     }
   }
   .left .bio {
@@ -20,11 +20,11 @@ body {
       font-size: .8em;
     }
     h1 {
-      color: $color-one;
+      color: white;
       font-family: 'Noto Serif', serif;
     }
     p {
-      color: $color-one;
+      color: white;
       font-size: .9em;
       line-height: 22px;
       font-family: 'Lato', sans-serif;

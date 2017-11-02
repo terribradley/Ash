@@ -11,7 +11,7 @@ header {
       align-items: center;
     }
     h1 {
-      color: $color-one;
+      color: #6968E8;
       margin-bottom: 0;
       font-family: 'Noto Serif', serif;
       font-weight: 500;
@@ -19,7 +19,7 @@ header {
 
     }
     h2 {
-      color: $color-one;
+      color: white;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       font-weight: 500;
       letter-spacing: 4.2px;
@@ -87,7 +87,7 @@ header {
     h2 {
       text-align: center;
       font-size: 1.8em;
-      color: $color-one;
+      color: white;
     }
   }
   .sculpture {
@@ -98,7 +98,7 @@ header {
     background-image: url("../img/background-blue.png");
     h1 {
       font-size: 1em;
-      color: $color-one;
+      color: white;
       margin-bottom: 3em;
       @media screen and (max-width: 450px) {
         margin-left: 4%;
